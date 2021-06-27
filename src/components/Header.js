@@ -6,32 +6,32 @@ function Header() {
     <Nav>
       <Logo src="/images/logo.svg" />
       <NavMenu>
-        <a>
-          <img src="/images/home-icon.svg" />
+        <a href="/">
+          <img src="/images/home-icon.svg" alt="Desc" />
           <span>HOME</span>
         </a>
-        <a>
-          <img src="/images/search-icon.svg" />
+        <a href="/"> 
+          <img src="/images/search-icon.svg" alt="Desc" />
           <span>SEARCH</span>
         </a>
-        <a>
-          <img src="/images/watchlist-icon.svg" />
+        <a href="/">
+          <img src="/images/watchlist-icon.svg" alt="Desc" />
           <span>WATCHLIST</span>
         </a>
-        <a>
-          <img src="/images/search-icon.svg" />
+        <a href="/">
+          <img src="/images/search-icon.svg" alt="Desc" />
           <span>SEARCH</span>
         </a>
-        <a>
-          <img src="/images/original-icon.svg" />
+        <a href="/">
+          <img src="/images/original-icon.svg" alt="Desc" />
           <span>ORIGINALS</span>
         </a>
-        <a>
-          <img src="/images/movie-icon.svg" />
+        <a href="/">
+          <img src="/images/movie-icon.svg" alt="Desc" />
           <span>MOVIES</span>
         </a>
-        <a>
-          <img src="/images/series-icon.svg" />
+        <a href="/">
+          <img src="/images/series-icon.svg" alt="Desc" />
           <span>SERIES</span>
         </a>
       </NavMenu>
@@ -48,6 +48,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   padding: 0 36px;
+  overflow-x: hidden;
 `
 
 const Logo = styled.img`
@@ -65,6 +66,8 @@ const NavMenu = styled.div`
     align-items: center;
     padding: 0 12px;
     cursor: pointer;
+    color: inherit;
+    text-decoration:none;
     
     img {
       height: 20px;
